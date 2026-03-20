@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.1",
+  "student": {
+    "name": "Vlad",
+    "role": "QA Engineer",
+    "repository": "/Users/vladyslav.horodnychyi/Documents/Claude Education Course/CC-Education-Horodnychyi",
+    "started_at": "2026-03-19T18:20:11.000Z",
+    "mcp_project_name": "Horodnychyi"
+  },
+  "modules": {
+    "1-foundations-and-commands": {
+      "status": "in_progress",
+      "started_at": "2026-03-19T18:20:11.000Z",
+      "completed_at": null,
+      "sessions": [
+        {
+          "session_id": "21765d15-197e-426a-b3b0-cdc33ccc7c77",
+          "started_at": "2026-03-19T16:20:03.474Z",
+          "ended_at": "2026-03-19T16:51:14.355Z",
+          "tasks_completed": ["create_claudeignore"]
+        },
+        {
+          "session_id": "321f4456-7729-4305-acb2-e32624bcc560",
+          "started_at": "2026-03-19T16:51:14.355Z",
+          "ended_at": "2026-03-20T17:10:58.922Z",
+          "tasks_completed": []
+        },
+        {
+          "session_id": "a2b1bc8d-f601-46b9-9204-0d0cc94d75f7",
+          "started_at": "2026-03-20T17:10:58.922Z",
+          "ended_at": "2026-03-20T17:14:03.826Z",
+          "tasks_completed": []
+        },
+        {
+          "session_id": "a116dbf6-1142-4c84-ab25-26c121d064b4",
+          "started_at": "2026-03-20T17:14:03.826Z",
+          "ended_at": "2026-03-20T17:27:26.071Z",
+          "tasks_completed": ["test_session_commands", "use_plan_mode"]
+        },
+        {
+          "session_id": "13999643-0c6d-4729-9fbe-b067384cd5c6",
+          "started_at": "2026-03-20T17:27:26.071Z",
+          "ended_at": "2026-03-20T17:33:47.905Z",
+          "tasks_completed": []
+        },
+        {
+          "session_id": "e7026096-4980-4761-904e-3c164a0f1527",
+          "started_at": "2026-03-20T17:33:47.905Z",
+          "ended_at": null,
+          "tasks_completed": []
+        }
+      ],
+      "tasks": {
+        "create_claude_md": true,
+        "claude_md_quality": true,
+        "add_project_overview": true,
+        "add_tech_stack": true,
+        "add_conventions": true,
+        "create_claudeignore": true,
+        "test_claude_understanding": true,
+        "explore_slash_commands": true,
+        "test_session_commands": true,
+        "use_plan_mode": true,
+        "create_custom_command": true,
+        "commit_work": false
+      },
+      "submission": null
+    },
+    "2-skills": {
+      "status": "locked",
+      "started_at": null,
+      "completed_at": null,
+      "sessions": [],
+      "tasks": {
+        "create_skills_directory": false,
+        "understand_codify_workflow": false,
+        "write_reference_skill": false,
+        "write_action_skill": false,
+        "test_skills": false,
+        "commit_skills": false
+      },
+      "submission": null
+    },
+    "3-extensions": {
+      "status": "locked",
+      "started_at": null,
+      "completed_at": null,
+      "sessions": [],
+      "tasks": {
+        "create_hook": false,
+        "test_hook": false,
+        "configure_mcp": false,
+        "test_mcp": false,
+        "create_advanced_command": false,
+        "commit_extensions": false
+      },
+      "submission": null
+    },
+    "4-agents": {
+      "status": "locked",
+      "started_at": null,
+      "completed_at": null,
+      "sessions": [],
+      "tasks": {
+        "use_subagent": false,
+        "create_worktrees": false,
+        "run_parallel_agents": false,
+        "merge_results": false,
+        "document_pattern": false,
+        "commit_updates": false
+      },
+      "submission": null
+    },
+    "5-workflows": {
+      "status": "locked",
+      "started_at": null,
+      "completed_at": null,
+      "sessions": [],
+      "tasks": {
+        "install_github_app": false,
+        "create_github_action": false,
+        "test_headless": false,
+        "create_automation_script": false,
+        "test_workflow": false,
+        "document_workflows": false,
+        "final_commit": false
+      },
+      "submission": null
+    }
+  },
+  "current_module": "1-foundations-and-commands",
+  "current_task": "commit_work",
+  "current_session_id": "e7026096-4980-4761-904e-3c164a0f1527",
+  "total_time_spent_minutes": 0,
+  "exports": [],
+  "graduation": {
+    "completed": false,
+    "completed_at": null,
+    "certificate_generated": false
+  }
+}
