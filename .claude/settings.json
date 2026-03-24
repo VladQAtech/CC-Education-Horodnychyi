@@ -7,5 +7,18 @@
       "Read(./*.pem)",
       "Read(./*.key)"
     ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'File modified by Claude' >> ./claude-hook.log"
+          }
+        ]
+      }
+    ]
   }
 }

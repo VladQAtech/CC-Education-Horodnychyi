@@ -9,9 +9,9 @@
   },
   "modules": {
     "1-foundations-and-commands": {
-      "status": "in_progress",
+      "status": "completed",
       "started_at": "2026-03-19T18:20:11.000Z",
-      "completed_at": null,
+      "completed_at": "2026-03-20T17:39:00.000Z",
       "sessions": [
         {
           "session_id": "21765d15-197e-426a-b3b0-cdc33ccc7c77",
@@ -46,8 +46,8 @@
         {
           "session_id": "e7026096-4980-4761-904e-3c164a0f1527",
           "started_at": "2026-03-20T17:33:47.905Z",
-          "ended_at": null,
-          "tasks_completed": []
+          "ended_at": "2026-03-20T17:39:00.000Z",
+          "tasks_completed": ["commit_work"]
         }
       ],
       "tasks": {
@@ -62,35 +62,67 @@
         "test_session_commands": true,
         "use_plan_mode": true,
         "create_custom_command": true,
-        "commit_work": false
+        "commit_work": true
       },
       "submission": null
     },
     "2-skills": {
-      "status": "locked",
-      "started_at": null,
-      "completed_at": null,
-      "sessions": [],
+      "status": "completed",
+      "started_at": "2026-03-20T17:43:00.000Z",
+      "completed_at": "2026-03-23T15:52:00.000Z",
+      "sessions": [
+        {
+          "session_id": "e7026096-4980-4761-904e-3c164a0f1527",
+          "started_at": "2026-03-20T17:43:00.000Z",
+          "ended_at": "2026-03-23T15:42:51.000Z",
+          "tasks_completed": []
+        },
+        {
+          "session_id": "85e9c966-d3a3-4a13-9582-0aafec33f1a1",
+          "started_at": "2026-03-23T15:42:51.000Z",
+          "ended_at": "2026-03-23T15:52:00.000Z",
+          "tasks_completed": ["test_skills", "commit_skills"]
+        }
+      ],
       "tasks": {
-        "create_skills_directory": false,
-        "understand_codify_workflow": false,
-        "write_reference_skill": false,
-        "write_action_skill": false,
-        "test_skills": false,
-        "commit_skills": false
+        "create_skills_directory": true,
+        "understand_codify_workflow": true,
+        "write_reference_skill": true,
+        "write_action_skill": true,
+        "test_skills": true,
+        "commit_skills": true
       },
       "submission": null
     },
     "3-extensions": {
-      "status": "locked",
-      "started_at": null,
+      "status": "in_progress",
+      "started_at": "2026-03-23T15:53:00.000Z",
       "completed_at": null,
-      "sessions": [],
+      "sessions": [
+        {
+          "session_id": "85e9c966-d3a3-4a13-9582-0aafec33f1a1",
+          "started_at": "2026-03-23T15:53:00.000Z",
+          "ended_at": "2026-03-23T17:02:25.000Z",
+          "tasks_completed": []
+        },
+        {
+          "session_id": "a1b5fbda-2b76-447f-9229-75d780e401bb",
+          "started_at": "2026-03-23T17:02:25.000Z",
+          "ended_at": "2026-03-24T17:03:21.000Z",
+          "tasks_completed": []
+        },
+        {
+          "session_id": "61d0c671-7e95-4352-9897-a8b03a248454",
+          "started_at": "2026-03-24T17:03:21.000Z",
+          "ended_at": null,
+          "tasks_completed": []
+        }
+      ],
       "tasks": {
-        "create_hook": false,
-        "test_hook": false,
-        "configure_mcp": false,
-        "test_mcp": false,
+        "create_hook": true,
+        "test_hook": true,
+        "configure_mcp": true,
+        "test_mcp": true,
         "create_advanced_command": false,
         "commit_extensions": false
       },
@@ -128,9 +160,9 @@
       "submission": null
     }
   },
-  "current_module": "1-foundations-and-commands",
-  "current_task": "commit_work",
-  "current_session_id": "e7026096-4980-4761-904e-3c164a0f1527",
+  "current_module": "3-extensions",
+  "current_task": "create_advanced_command",
+  "current_session_id": "61d0c671-7e95-4352-9897-a8b03a248454",
   "total_time_spent_minutes": 0,
   "exports": [],
   "graduation": {
