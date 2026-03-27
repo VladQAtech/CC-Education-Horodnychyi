@@ -35,3 +35,28 @@ This is a course repository for the Claude Code Education program. Modules are s
   - Run specific test: `pytest tests/test_login.py`
   - Run with report: `pytest --html=report.html`
   - Start dev: <no command>
+
+## Multi-Agent Patterns
+
+This project uses Claude subagents for parallel test generation. The pattern:
+
+1. **Create worktrees** — one per task, so agents work in isolation:
+   ```bash
+   git worktree add ../project-feature-a -b feature-a
+   git worktree add ../project-feature-b -b feature-b
+   ```
+
+2. **Launch parallel agents** — in a single Claude message, send multiple Agent tool calls, each pointing to its own worktree. Agents share CLAUDE.md and skills but NOT conversation history.
+
+3. **Commit from each worktree** — agents write files but don't auto-commit; commit manually from each worktree directory.
+
+4. **Merge into main**:
+   ```bash
+   git merge feature-a --no-ff -m "Merge: agent work description"
+   ```
+   `--no-ff` forces a merge commit, preserving branch history even when fast-forward is possible.
+
+### When to use parallel agents
+- Writing Page Objects and tests for them simultaneously
+- Generating tests for multiple independent features
+- Any task that can be split into independent units with no shared files

@@ -95,9 +95,9 @@
       "submission": null
     },
     "3-extensions": {
-      "status": "in_progress",
+      "status": "completed",
       "started_at": "2026-03-23T15:53:00.000Z",
-      "completed_at": null,
+      "completed_at": "2026-03-24T17:45:00.000Z",
       "sessions": [
         {
           "session_id": "85e9c966-d3a3-4a13-9582-0aafec33f1a1",
@@ -114,8 +114,8 @@
         {
           "session_id": "61d0c671-7e95-4352-9897-a8b03a248454",
           "started_at": "2026-03-24T17:03:21.000Z",
-          "ended_at": null,
-          "tasks_completed": []
+          "ended_at": "2026-03-24T17:45:00.000Z",
+          "tasks_completed": ["test_mcp", "create_advanced_command", "commit_extensions"]
         }
       ],
       "tasks": {
@@ -123,21 +123,32 @@
         "test_hook": true,
         "configure_mcp": true,
         "test_mcp": true,
-        "create_advanced_command": false,
-        "commit_extensions": false
+        "create_advanced_command": true,
+        "commit_extensions": true
       },
-      "submission": null
+      "submission": {
+        "submitted_at": "2026-03-24T17:50:00Z",
+        "file_path": "/Users/vladyslav.horodnychyi/Documents/Claude Education Course/CC-Education-Horodnychyi/.claude/claude-course/submissions/seminar3-vlad-2026-03-24.zip",
+        "file_size_bytes": 714752
+      }
     },
     "4-agents": {
-      "status": "locked",
-      "started_at": null,
+      "status": "in_progress",
+      "started_at": "2026-03-24T17:55:00.000Z",
       "completed_at": null,
-      "sessions": [],
+      "sessions": [
+        {
+          "session_id": "61d0c671-7e95-4352-9897-a8b03a248454",
+          "started_at": "2026-03-24T17:55:00.000Z",
+          "ended_at": null,
+          "tasks_completed": []
+        }
+      ],
       "tasks": {
-        "use_subagent": false,
-        "create_worktrees": false,
-        "run_parallel_agents": false,
-        "merge_results": false,
+        "use_subagent": true,
+        "create_worktrees": true,
+        "run_parallel_agents": true,
+        "merge_results": true,
         "document_pattern": false,
         "commit_updates": false
       },
@@ -160,8 +171,8 @@
       "submission": null
     }
   },
-  "current_module": "3-extensions",
-  "current_task": "create_advanced_command",
+  "current_module": "4-agents",
+  "current_task": "use_subagent",
   "current_session_id": "61d0c671-7e95-4352-9897-a8b03a248454",
   "total_time_spent_minutes": 0,
   "exports": [],
