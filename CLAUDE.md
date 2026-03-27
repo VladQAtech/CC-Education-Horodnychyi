@@ -60,3 +60,23 @@ This project uses Claude subagents for parallel test generation. The pattern:
 - Writing Page Objects and tests for them simultaneously
 - Generating tests for multiple independent features
 - Any task that can be split into independent units with no shared files
+
+## CI/CD Workflows
+
+### GitHub Actions — Claude Code Review
+File: `.github/workflows/claude.yml`
+
+Triggers automatically on:
+- Pull request opened or updated
+- Comment containing `@claude` on any PR
+
+Uses `anthropics/claude-code-action@beta` with OAuth token (corporate Claude subscription — no API key needed).
+
+### Running Tests Locally
+```bash
+bash run_tests.sh         # run all web tests + generate HTML report
+pytest tests/web/ -v      # run with verbose output (headless by default)
+pytest tests/web/ --headed  # run with visible browser (for debugging)
+```
+
+Reports are saved to `reports/report.html` (excluded from git).
